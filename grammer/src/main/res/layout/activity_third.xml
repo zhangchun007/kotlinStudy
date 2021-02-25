@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="凉风有信，秋月无边。打二字"></TextView>
+
+        <Button
+            android:id="@+id/btn_if_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="if的简单分支"></Button>
+        <Button
+            android:id="@+id/btn_if_simple2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="if的简单分支简化"></Button>
+
+        <Button
+            android:id="@+id/btn_if_simple3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="多路分支"></Button>
+
+        <Button
+            android:id="@+id/btn_if_simple4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="多路分支简化"></Button>
+        <Button
+            android:id="@+id/btn_if_simple5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="多路分支支持变量"></Button>
+        <Button
+            android:id="@+id/btn_if_simple6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="多路分支多变量跟区间"></Button>
+        <Button
+            android:id="@+id/btn_if_simple7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="多路分支之类型判断"></Button>
+
+        <Button
+            android:id="@+id/btn_cycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="循环判断"></Button>
+        <Button
+            android:id="@+id/btn_cycler1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="循环判断改进"></Button>
+        <Button
+            android:id="@+id/btn_break_cycler1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跳出循环"></Button>
+        <Button
+            android:id="@+id/btn_break_cycler2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跳出多层循环"></Button>
+        <Button
+            android:id="@+id/btn_str_judge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="字符串的有效判断"></Button>
+        <Button
+            android:id="@+id/btn_str_judge2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="校验空值的运算符?."></Button>
+        <Button
+            android:id="@+id/btn_str_judge3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="校验空值的运算符?:"></Button>
+        <Button
+            android:id="@+id/btn_str_judge4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="校验空值的运算符!!"></Button>
+
+        <Button
+            android:id="@+id/btn_equals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="等式结构相等"></Button>
+        <Button
+            android:id="@+id/btn_equals1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="等式引用¬相等"></Button>
+
+        <Button
+            android:id="@+id/btn_contains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关键字in和!in"></Button>
+    </LinearLayout>
+
+</ScrollView>

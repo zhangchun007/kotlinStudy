@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_message"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="消息传递"></Button>
+
+        <Button
+            android:id="@+id/btn_asynctask"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="asynctask"></Button>
+
+        <Button
+            android:id="@+id/btn_json"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="json解析"></Button>
+        <Button
+            android:id="@+id/btn_json_convert"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="json转换"></Button>
+        <Button
+            android:id="@+id/btn_http_request"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="http_request"></Button>
+    </LinearLayout>
+
+</ScrollView>

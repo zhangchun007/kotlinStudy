@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_recycler_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="线性循环视图"></Button>
+
+    <Button
+        android:id="@+id/btn_recycler_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="网格循环视图"></Button>
+
+    <Button
+        android:id="@+id/btn_recycler_staggered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="瀑布流循环视图"></Button>
+
+    <Button
+        android:id="@+id/btn_coordinatorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="协调布局"></Button>
+
+    <Button
+        android:id="@+id/btn_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="toolbar"></Button>
+
+    <Button
+        android:id="@+id/btn_appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Appbarlayout"></Button>
+
+    <Button
+        android:id="@+id/btn_appbarlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Appbarlayout2"></Button>
+
+    <Button
+        android:id="@+id/btn_collapsingToolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="折叠式布局"></Button>
+
+    <Button
+        android:id="@+id/btn_ali_collapsingToolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="仿照阿里支付宝折叠式布局"></Button>
+
+    <Button
+        android:id="@+id/btn_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="viewpage"></Button>
+
+    <Button
+        android:id="@+id/btn_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fragment"></Button>
+
+    <Button
+        android:id="@+id/btn_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tablayout"></Button>
+
+    <Button
+        android:id="@+id/btn_BroadCast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BroadCast"></Button>
+
+    <Button
+        android:id="@+id/btn_swiprefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="swiprefresh"></Button>
+
+    <Button
+        android:id="@+id/btn_depart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="电商综合"></Button>
+
+</LinearLayout>

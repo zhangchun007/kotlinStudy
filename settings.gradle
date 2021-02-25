@@ -1,0 +1,2 @@
+include ':grammer', ':simple', ':complex', ':storage', ':custom', ':network', ':coroutines'
+rootProject.name='KotlinStudy'

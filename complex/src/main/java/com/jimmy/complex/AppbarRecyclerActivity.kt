@@ -1,0 +1,22 @@
+package com.jimmy.complex
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.jimmy.complex.adapter.RecyclerCollapseAdapter
+import kotlinx.android.synthetic.main.activity_appbar_recycler.*
+
+class AppbarRecyclerActivity : AppCompatActivity() {
+
+    private val yearArray =
+        arrayOf("鼠年", "牛年", "虎年", "兔年", "龙年", "蛇年", "马年", "羊年", "猴年", "鸡年", "狗年", "猪年")
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_appbar_recycler)
+
+        setSupportActionBar(tl_title)
+        rv_main.layoutManager=LinearLayoutManager(this)
+        rv_main.adapter=RecyclerCollapseAdapter(this,yearArray)
+    }
+}

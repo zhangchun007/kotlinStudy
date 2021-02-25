@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">custom</string>
+    <string name="pause_event">com.jimmy.custom.service.pause</string>
+</resources>

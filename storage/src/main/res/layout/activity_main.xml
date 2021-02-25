@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="8.1 共享参数" />
+
+        <Button
+            android:id="@+id/btn_share_write"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="写入共享参数"></Button>
+
+        <Button
+            android:id="@+id/btn_share_read"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="读取共享参数"></Button>
+
+        <Button
+            android:id="@+id/btn_login_share"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="登陆记住密码"></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="8.2 数据库SQLite" />
+
+        <Button
+            android:id="@+id/btn_sqlite_write"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="写入数据库"></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="文件I/O操作" />
+
+        <Button
+            android:id="@+id/btn_file_path"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="获取文件保存位置"></Button>
+
+        <Button
+            android:id="@+id/btn_text_write"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="写入文本文件"></Button>
+
+        <Button
+            android:id="@+id/btn_text_read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="读取文本文件" />
+
+        <Button
+            android:id="@+id/btn_image_write"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="写入图片文件" />
+
+        <Button
+            android:id="@+id/btn_image_reader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="读取图片文件" />
+        <Button
+            android:id="@+id/btn_application"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="application" />
+        <Button
+            android:id="@+id/btn_optionmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="optionmenu" />
+    </LinearLayout>
+
+</ScrollView>

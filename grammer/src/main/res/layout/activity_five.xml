@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FiveActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_class1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="类的初始化"></Button>
+
+        <Button
+            android:id="@+id/btn_class2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="二级构造函数"></Button>
+
+        <Button
+            android:id="@+id/btn_class3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="多个二级构造函数"></Button>
+
+        <Button
+            android:id="@+id/btn_class4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="带默认参数的构造函数"></Button>
+
+        <Button
+            android:id="@+id/btn_class5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="java 与 kotlin互相调用"></Button>
+
+        <Button
+            android:id="@+id/btn_class6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="成员变量"></Button>
+
+        <Button
+            android:id="@+id/btn_class7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="类中其他变量"></Button>
+
+        <Button
+            android:id="@+id/btn_class8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="成员方法"></Button>
+
+        <Button
+            android:id="@+id/btn_class9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="伴生对象"></Button>
+
+        <Button
+            android:id="@+id/btn_class10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="类的继承"></Button>
+
+        <Button
+            android:id="@+id/btn_class11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="重写父类的方法"></Button>
+
+        <Button
+            android:id="@+id/btn_class12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="抽象类"></Button>
+
+        <Button
+            android:id="@+id/btn_class13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="接口"></Button>
+
+        <Button
+            android:id="@+id/btn_class14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="接口代理"></Button>
+
+        <Button
+            android:id="@+id/btn_class15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="嵌套类"></Button>
+
+        <Button
+            android:id="@+id/btn_class16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="内部类"></Button>
+
+        <Button
+            android:id="@+id/btn_class17"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="枚举类"></Button>
+
+        <Button
+            android:id="@+id/btn_class18"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="密封类"></Button>
+
+        <Button
+            android:id="@+id/btn_class19"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="数据类"></Button>
+
+        <Button
+            android:id="@+id/btn_class20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="泛型类"></Button>
+    </LinearLayout>
+
+</ScrollView>

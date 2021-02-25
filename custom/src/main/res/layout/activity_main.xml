@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_CustomProperty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CustomProperty" />
+
+        <Button
+            android:id="@+id/btn_measure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="measure" />
+
+        <Button
+            android:id="@+id/btn_draw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="draw" />
+
+        <Button
+            android:id="@+id/btn_runnable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="runnable" />
+
+        <Button
+            android:id="@+id/btn_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="progressbar" />
+
+        <Button
+            android:id="@+id/btn_text_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="textprogressbar" />
+
+        <Button
+            android:id="@+id/btn_text_progress_animal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text_progress_animal" />
+
+        <Button
+            android:id="@+id/btn_simple_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="simple_notification" />
+
+        <Button
+            android:id="@+id/btn_counter_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="动态的计时消息" />
+
+        <Button
+            android:id="@+id/btn_large_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="大视图通知" />
+
+        <Button
+            android:id="@+id/btn_special_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="特殊通知" />
+
+        <Button
+            android:id="@+id/btn_custom_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="remoteview通知" />
+
+        <Button
+            android:id="@+id/btn_service_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="普通方式启动服务" />
+
+        <Button
+            android:id="@+id/btn_service_bind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绑定式服务" />
+
+        <Button
+            android:id="@+id/btn_service_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="推送服务到前台" />
+
+        <Button
+            android:id="@+id/btn_vibrator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="震动" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮的使用" />
+
+    <Button
+        android:id="@+id/btn_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="线性布局" />
+
+    <Button
+        android:id="@+id/btn_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="相对布局" />
+
+    <Button
+        android:id="@+id/btn_constrain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="约束布局" />
+
+    <Button
+        android:id="@+id/btn_marquee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="textview视图" />
+
+    <Button
+        android:id="@+id/btn_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ImageView" />
+
+    <Button
+        android:id="@+id/btn_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文本编辑框" />
+
+    <Button
+        android:id="@+id/btn_intent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="activity活动跳转" />
+
+    <Button
+        android:id="@+id/btn_intent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="传递序列化数据" />
+
+    <Button
+        android:id="@+id/btn_intent3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转时指定启动模式" />
+
+    <Button
+        android:id="@+id/btn_intent4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="对话框" />
+    <Button
+        android:id="@+id/btn_intent5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登陆页面" />
+
+</LinearLayout>

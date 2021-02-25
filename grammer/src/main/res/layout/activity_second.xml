@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="初始数据为：65.0f"></TextView>
+
+        <Button
+            android:id="@+id/btn_int"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="转化为整型："></Button>
+
+        <Button
+            android:id="@+id/btn_long"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="转化为长整型："></Button>
+
+        <Button
+            android:id="@+id/btn_Double"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="转化为双精度型："></Button>
+
+        <Button
+            android:id="@+id/btn_boolean"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="转化为boolean型："></Button>
+
+        <Button
+            android:id="@+id/btn_char"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="转化为字符串型："></Button>
+
+        <Button
+            android:id="@+id/btn_get"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="获取数组元素："></Button>
+
+        <Button
+            android:id="@+id/btn_substring"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="字符串截取："></Button>
+
+        <Button
+            android:id="@+id/btn_split"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="字符串分割："></Button>
+
+        <Button
+            android:id="@+id/btn_format"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="字符串模版："></Button>
+
+        <Button
+            android:id="@+id/btn_format_length"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="字符串模版长度："></Button>
+
+        <Button
+            android:id="@+id/btn_format_opt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="美元符号的输出："></Button>
+
+        <Button
+            android:id="@+id/btn_set_for_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="set for-in循环："></Button>
+
+        <Button
+            android:id="@+id/btn_set_iterator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="set iterator遍历："></Button>
+
+
+        <Button
+            android:id="@+id/btn_set_forEach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="set forEach遍历："></Button>
+
+        <Button
+            android:id="@+id/btn_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="list 下标遍历："></Button>
+
+        <Button
+            android:id="@+id/btn_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="list sort排序："></Button>
+
+        <Button
+            android:id="@+id/btn_map_forin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="map for-in循环："></Button>
+
+        <Button
+            android:id="@+id/btn_map_iterator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="map for-in循环："></Button>
+
+        <Button
+            android:id="@+id/btn_map_forEach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="map forEach遍历："></Button>
+
+    </LinearLayout>
+
+</ScrollView>
