@@ -124,6 +124,9 @@ class FourActivity : AppCompatActivity() {
             count++
         }
 
+        btn_fun12.let {
+
+        }
 
         //4.3.3 简化函数
         //将函数看做变量的思想
@@ -316,6 +319,8 @@ class FourActivity : AppCompatActivity() {
     //高阶函数
     //greater()有两个输入参数，返回boolean类型的值
     //greater()函数中，如果第一个参数大于第二个参数，就认为greater（）返回true,否则返回false
+    //下面高阶函数的第二个参数就是一 个函数变量，其中变量名称为greater， 冒号后面的“(T, T)”表示greater函数有两个类型为T的输入参数，该函数的返回值是Boolean类型。现在有
+    //了高阶函数的定义，再来看看外部如何调用这个高阶函数，调用的示例代码如下:
     fun <T> maxCustom(array: Array<T>, greater: (T, T) -> Boolean): T? {
         var max: T? = null
         for (item in array) {

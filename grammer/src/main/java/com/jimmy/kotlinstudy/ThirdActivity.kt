@@ -305,9 +305,9 @@ class ThirdActivity : AppCompatActivity() {
             }
         }
 
-        //3.4.4 s和in
+        //3.4.4 is和in
         //运算符is 和!is 判断变量是否是某种类型 替换java instanceof关键字
-        // 判断数组中是否存在某个元素
+        // in判断数组中是否存在某个元素
         val oneArray: IntArray = intArrayOf(1, 2, 3, 4, 5)
         btn_contains.setOnClickListener {
             val four: Int = 4
