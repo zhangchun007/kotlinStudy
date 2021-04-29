@@ -34,7 +34,6 @@ class SecondActivity : AppCompatActivity() {
 
         //2.2 数组
         //2.2.1 数组变量的声明
-
         var int_array: IntArray = intArrayOf(1, 2, 3)
         var long_array: LongArray = longArrayOf(4, 5, 6)
         var float_array: FloatArray = floatArrayOf(1.0f, 2.0f, 3.0f)

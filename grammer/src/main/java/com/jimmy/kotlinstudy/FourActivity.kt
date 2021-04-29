@@ -125,8 +125,10 @@ class FourActivity : AppCompatActivity() {
         }
 
         btn_fun12.let {
-
+            repeat(100){print("a")}
         }
+
+
 
         //4.3.3 简化函数
         //将函数看做变量的思想
@@ -148,8 +150,10 @@ class FourActivity : AppCompatActivity() {
         btn_fun15.setOnClickListener {
             btn_fun15.text = when (count % 4) {
                 0 -> "字符串数组的默认最大值为${string_array.max()}"
-                1 -> "字符串数组按长度比较的最大值为${maxCustom<String>(string_array,
-                    { a, b -> a.length > b.length })}"
+//                1 -> "字符串数组按长度比较的最大值为${maxCustom<String>(string_array,
+//                    { a, b -> a.length > b.length })}"
+                1 -> "字符串数组按长度比较的最大值为${maxCustom<String>(string_array)
+                    { a, b -> a.length > b.length }}"
                 2 -> "字符串数组的默认最大值（使用高阶函数为）${maxCustom<String>(string_array, { a, b -> a > b })}"
                 else -> "字符串数组按去掉空格再比较长度的最大值为${maxCustom<String>(string_array,
                     { a, b -> a.trim().length > b.trim().length })}"
@@ -291,6 +295,12 @@ class FourActivity : AppCompatActivity() {
         }
         return str
 
+    }
+
+    inline fun repeat(times: Int, action: (Int) -> Unit) {
+        for (index in 0 until times) {
+            action(index)
+        }
     }
 
     //内联函数
