@@ -208,6 +208,7 @@ class FiveActivity : AppCompatActivity() {
          * 枚举变量也必须调用对应的构造函数。这样做的好处是，每个枚举值不但携带唯一的名称，还可以拥有更加个性化的特征描述。
          */
 
+
         btn_class17.setOnClickListener {
             if (count % 2 == 0) {
                 btn_class17.text = when (count++ % 4) {

@@ -30,5 +30,13 @@ class MainActivity : AppCompatActivity() {
         btn_four.setOnClickListener { startActivity(intent4) }
 
 
+        var intent5 = Intent(this, SixActivity::class.java);
+        btn_six.setOnClickListener { startActivity(intent5) }
+
+        var intent6 = Intent(this, FanXingActivity::class.java);
+        btn_fanxing.setOnClickListener { startActivity(intent6) }
+
+
+
     }
 }

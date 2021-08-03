@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.jimmy.kotlinstudy.guolin.CellPhone
+import com.jimmy.kotlinstudy.guolin.Singleton
 import com.jimmy.kotlinstudy.guolin.Student
 import com.jimmy.kotlinstudy.guolin.lettersCount
 import kotlinx.android.synthetic.main.activity_six.*
@@ -56,8 +57,13 @@ class SixActivity : AppCompatActivity() {
         println(cellphone1)
         println("cellphone1 equals cellphone2 " + (cellphone1 == cellphone2))
 
+        //注意：kotlin单利类
+        //在Kotlin中创建一个单例类的方式极其简单，只需要将class关键字改成 object关键字即可
+        Singleton.singletonTest()
+
         //笔记六：集合的函数式api
         //首先来看一下Lambda的定义，如果用最直白的语言来阐述的话，Lambda就 是一小段可以作为参数传递的代码
+        //从定义上看，这个功能就很厉害了， 因为正常情况下，我们向某个函数传参时只能传入变量，而借助Lambda却 允许传入一小段代码。
         //Lambda表达式的语法结构:
         // {参数名1: 参数类型, 参数名2: 参数类型 -> 函数体}
         //这是Lambda表达式最完整的语法结构定义。首先最外层是一对大括号，如 果有参数传入到Lambda表达式中的话，我们还需要声明参数列表，参数列 表的结尾使用一个->符号，
@@ -76,6 +82,7 @@ class SixActivity : AppCompatActivity() {
         //简化操作3：
         val maxlengthFruit5 = list.maxBy { fruit: String -> fruit.length }
         //简化操作4：(类型推到机制)
+        //由于 Kotlin拥有出色的类型推导机制，Lambda表达式中的参数列表其实在大多 数情况下不必声明参数类型，因此代码可以进一步简化成:
         val maxlengthFruit6 = list.maxBy { fruit -> fruit.length }
         //简化操作5：当Lambda表达式的参数列表中只有一个参数时，也不必声明参数 名，而是可以使用it关键字来代替
         val maxlengthFruit7 = list.maxBy { it.length }
@@ -116,6 +123,30 @@ class SixActivity : AppCompatActivity() {
 //        public interface Runnable {
 //            void run();
 //        }
+        //根据前面的讲解，对于任何一个Java方法，只要它接收Runnable参数，就 可以使用函数式API。
+        // 那么什么Java方法接收了Runnable参数呢?这就有 很多了，不过Runnable接口主要还是结合线程来一起使用的，因此这里我 们就通过Java的线程类Thread来学习一下。
+        //Thread类的构造方法中接收了一个Runnable参数，我们可以使用如下 Java代码创建并执行一个子线程:
+
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() { System.out.println("Thread is running");
+//            }
+//        }).start();
+        //而如果直接将这段代码翻译成Kotlin版本，写法将如下所示:
+        //由于Kotlin完全舍弃了new关键 字，因此创建匿名类实例的时候就不能再使用new了，而是改用了object 关键字
+        Thread(object : Runnable {
+            override fun run() {
+                println("Thread is running")
+            }
+        }).start()
+        //目前Thread类的构造方法是符合Java函数式API的使用条件 的，下面我们就看看如何对代码进行精简，如下所示:
+        Thread(Runnable { println("Thread is running") }).start()
+        //另外，如果一个Java方法的参数列表中有且仅有一个Java单抽象方法接口 参数，我们还可以将接口名进行省略，这样代码就变得更加精简了:
+        Thread({
+            println("Thread is running")
+        }).start()
+        //前Kotlin中函数式API的用法类似，当Lambda 表达式是方法的最后一个参数时，可以将Lambda表达式移到方法括号的外 面。
+        // 同时，如果Lambda表达式还是方法的唯一一个参数
         Thread { println("Thread is running") }.start()
 
         //举例2
@@ -231,7 +262,6 @@ class SixActivity : AppCompatActivity() {
 //            runnable.run()
 //        }
 
-        //
 
 
     }

@@ -4,9 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:paddingBottom="18dp"
     tools:context=".FiveActivity">
 
+    <ScrollView
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+    </ScrollView>
     <LinearLayout
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
