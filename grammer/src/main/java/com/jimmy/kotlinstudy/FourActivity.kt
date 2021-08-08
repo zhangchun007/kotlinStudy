@@ -1,7 +1,7 @@
 package com.jimmy.kotlinstudy
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.jimmy.kotlinstudy.utils.DateUtil
 import kotlinx.android.synthetic.main.activity_four.*
 import java.text.SimpleDateFormat
