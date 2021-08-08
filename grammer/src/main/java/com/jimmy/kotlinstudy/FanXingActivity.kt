@@ -89,7 +89,7 @@ class FanXingActivity : AppCompatActivity() {
          */
 
         /**
-         * 泛型的协变：
+         * 泛型的协变：相当于java中extends
          * 我们创建了一个Student 的实例，并将它封装到SimpleData<Student>当中，然后将 SimpleData<Student>作为参数传递给handleSimpleData()方法。
          * 但是handleSimpleData()方法接收的是一个SimpleData<Person>参 数(这里假设可以编译通过)，那么在handleSimpleData()方法中，我 们就可以创建一个Teacher的实例，
          * 并用它来替换 SimpleData<Person>参数中的原有数据。这种操作肯定是合法的，因为 Teacher也是Person的子类，所以可以很安全地将Teacher的实例设置 进去。
@@ -118,7 +118,7 @@ class FanXingActivity : AppCompatActivity() {
         val studentDatas = datas.get()
 
         /**
-         * 泛型的逆变：
+         * 泛型的逆变：相当于java中super
          *那么这里先引出定义吧，假如定义了一个MyClass<T>的泛型类，其中A是B的子类型，同时 MyClass<B>又是MyClass<A>的子类型，那么我们就可以称MyClass在T 这个泛型上是逆变的
          *
          * 先我们在main()方法中编写了一个Transformer<Person>的匿名类 实现，并通过transform()方法将传入的Person对象转换成了一个“姓 名+年龄”拼接的字符串。
