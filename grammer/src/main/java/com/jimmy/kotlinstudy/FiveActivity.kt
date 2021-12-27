@@ -275,7 +275,7 @@ class FiveActivity : AppCompatActivity() {
         //⚠️外部调用模版类构造函数的时候，要在类名后面补充"<参数类型>",从而动态指定实际的参数类型。
         btn_class20.setOnClickListener {
             var river = when (count++ % 4) {
-                0 -> River<Int>("小溪", 100)
+                0 -> River("小溪", 100)
                 //如果编译器根据输入参数就能知晓参数类型，也可以直接省略<参数类型>"
                 1 -> River("瀑布", 99.9f)
                 2 -> River<Double>("山涧", 50.5)
