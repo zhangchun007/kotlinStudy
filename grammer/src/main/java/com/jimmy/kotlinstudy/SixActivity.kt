@@ -162,6 +162,69 @@ class SixActivity : AppCompatActivity() {
         // lateinit var btn: Button
 
 
+        //比价新加：标准函数with、 run 和 apply
+
+        //1:with
+        // 它可以在连续调用同一个对象的多个方法时 让代码变得更加精简
+        val listFruits = listOf("Apple", "Banana", "Orange", "Pear", "Grape", "Watermelon")
+        val builder=StringBuilder()
+        builder.append("Start eating fruits.\n")
+        for (fruit in listFruits) {
+            builder.append(fruit).append("\n")
+        }
+        builder.append("Eat all fruits")
+        var results=builder.toString()
+        print(results)
+
+        val  results2= with(StringBuilder()){
+            append("Start eating fruits.\n")
+            for (fruit in listFruits) {
+                builder.append(fruit).append("\n")
+            }
+            append("Eat all fruits")
+            toString()
+        }
+
+        //2:run
+        /**
+         * run函数通常不会直接调用，而是要在某个对象的基础上调用;其次run函数只接收一个Lambda参数，并且会在Lambda表达式中提供调用对象的上下文。
+         * 其他方面和with函数是一样的，包括也会使用Lambda表达式中的最后一行代码作为返回值返回。
+
+            val result = obj.run {
+            // 这里是obj的上下文
+            "value" // run函数的返回值
+            }
+
+         */
+        val  results3= StringBuilder().run{
+            append("Start eating fruits.\n")
+            for (fruit in listFruits) {
+                builder.append(fruit).append("\n")
+            }
+            append("Eat all fruits")
+            toString()
+        }
+
+        //apply函数
+        //apply函数和run函数也是极 其类似的，都要在某个对象上调用，并且只接收一个Lambda参数，也会在 Lambda表达式中提供调用对象的上下文，
+        // 但是apply函数无法指定返回 值，而是会自动返回调用对象本身。
+        /**
+         * val result = obj.apply { // 这里是obj的上下文
+            }
+           //result == obj
+         */
+
+        val results4=StringBuilder().apply {
+            append("Start eating fruits.\n")
+            for (fruit in listFruits) {
+                builder.append(fruit).append("\n")
+            }
+            append("Eat all fruits")
+        }
+        print(results4.toString())
+
+
+
         //笔记10 扩展函数
         //扩展函数表示即使在不修改某个类的源码的 情况下，仍然可以打开这个类，向该类添加新的函数。
         //扩展函数的语法结构
